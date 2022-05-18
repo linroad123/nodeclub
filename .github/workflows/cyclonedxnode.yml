@@ -35,11 +35,11 @@ jobs:
 #           npm install -g @cyclonedx/bom
 #           python3 -m cyclonedx_py -r
           
-#       - name: Upload bom file
-#         uses: actions/upload-artifact@v1
-#         with:
-#           name: ${{ env.ARTIFACT_NAME }}
-#           path: cyclonedx.xml
+      - name: Upload bom file
+        uses: actions/upload-artifact@v1
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: cyclonedx.xml
           
 #       - name: Upload to server  
 #         uses: DependencyTrack/gh-upload-sbom@v1.0.0
