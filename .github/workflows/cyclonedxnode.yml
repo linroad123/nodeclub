@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: ${{ env.ARTIFACT_NAME }}
-          path: cyclonedx.xml
+          path: bom.xml
           
 #       - name: Upload to server  
 #         uses: DependencyTrack/gh-upload-sbom@v1.0.0
